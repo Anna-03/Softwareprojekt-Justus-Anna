@@ -8,15 +8,25 @@
 public class Patienten
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int x;
+    private int Age;
+    private String Name;
+    private String Prename;
+    private double dateofbirth;
+    private String Insurance;
+    private String Gender;
 
     /**
      * Konstruktor für Objekte der Klasse Patienten
      */
-    public Patienten()
+    public Patienten(String a, String b, int c, double d, String e, String f)
     {
         // Instanzvariable initialisieren
-        x = 0;
+        Name = a;
+        Prename = b;
+        Age = c;
+        dateofbirth = d;
+        Insurance = e;
+        Gender = f;
     }
 
     /**
@@ -25,9 +35,11 @@ public class Patienten
      * @param  y    ein Beispielparameter für eine Methode
      * @return        die Summe aus x und y
      */
-    public int beispielMethode(int y)
+    public int beispielMethode()
     {
         // tragen Sie hier den Code ein
-        return x + y;
+        return Age;
     }
 }
+
+
