@@ -5,28 +5,22 @@
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)
  */
-public class Patienten
+public class Patient
 {
     // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
-    private int Age;
-    private String Name;
-    private String Prename;
-    private double dateofbirth;
-    private String Insurance;
-    private String Gender;
+    private int age;
+    private String name;
+    private String prename;
 
     /**
      * Konstruktor für Objekte der Klasse Patienten
      */
-    public Patienten(String a, String b, int c, double d, String e, String f)
+    public Patient(String a, String b, int c)
     {
         // Instanzvariable initialisieren
-        Name = a;
-        Prename = b;
-        Age = c;
-        dateofbirth = d;
-        Insurance = e;
-        Gender = f;
+        this.name = a;
+        this.prename = b;
+        this.age = c;
     }
 
     /**
@@ -38,8 +32,7 @@ public class Patienten
     public int beispielMethode()
     {
         // tragen Sie hier den Code ein
-        return Age;
+        return age;
     }
 }
-
 
